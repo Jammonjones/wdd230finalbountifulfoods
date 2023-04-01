@@ -9,3 +9,26 @@
 
 /* Foundational small styles that set up all base styles for the whole website and designed first most for mobile devices. */
 /* ---------------- Home Page Styles --------------- */
+/* Base styles for all pages */
+html{
+    font-family: Comfortaa, Georgia, 'Times New Roman', Times, serif;
+}
+/* header */
+header{
+    display: flex;
+    flex-direction: row;
+}
+nav.open{
+    display: none;
+}
+nav.closed{
+    order: 2;
+}
+nav.closed:hover{
+    transform: translateY(3px);
+    cursor: pointer;
+}
+header img{
+    width: 54px;
+    order: 1;
+}

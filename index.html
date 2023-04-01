@@ -7,14 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- For SEO it is really important to add descriptive, relevant, and high search volume phrases and words for your page title and description! -->
-    <title>Add Title Here</title>
-    <meta name="description" content="Add Description Here">
+    <title>Bountiful Foods</title>
+    <meta name="description" content="Bountiful foods provides services with a central purpose of selling their fruit and fruit drinks to more of the local population and many visiting tourists. In addition to their physical location they have food trucks out and about in the area. As sales are either in person or over the phone the purpose of the website is to provide an easy way to find out more information about the store and provide an additional way for customers to find their phone numbers to make orders. In addition to this it will promote the store in a simple appealing way to encourage more people to try their fruit and drinks.     ">
 
     <!-- Connecting this html page to stylesheets in cascading order -->
     <link rel="stylesheet" href="styles/a_my_default.css">
     <link rel="stylesheet" href="styles/b_small_foundation.css">
     <link rel="stylesheet" href="styles/c_medium.css">
     <link rel="stylesheet" href="styles/d_large.css">
+
+    <!-- Other style stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
 
     <!-- Connecting JS code to this html page and defering it's execution until after the elements of the page are build -->
     <script defer src="scripts/main.js"></script>
@@ -23,13 +28,66 @@
 <!-- For SEO it is really important to use proper html semantics and use descriptive, relevant, high seach volume key words to all elements starting with h1 heading and down. Even img alt tags and p text helps out but h1, h2, and down in order of importance for SEO -->
 <body>
     <header>
-
+        <nav class="closed"><img src="images/hamburgermenu50x50.png" alt="hamburger menu"></nav>
+        <nav class="open">
+            <div class="social_links">
+                <a href="instagram.com"><img src="images/instagram.png" alt="Instagram images"></a>
+                <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="tiktok image"></a>
+                <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube image"></a>
+            </div>
+            <a href="fresh.html">Fresh</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <img src="images/logo150x150.png" alt="logo" class="logo">
+        <h1>Bountiful Foods</h1>
     </header>
     <main>
-        <h1></h1>
-    </main>
-    <footer>
+        <img src="images/fruitheroimagelargeopt.jpg" alt="Image of Laguna Beach" class="hero">
+        <h2 class="description">Welcome to Bountiful Foods! We are a local fresh produce company located in Carlsbad California. If organic fresh fruits and veggies are your thing make sure to stop by today or by one of our food trucks in the area. We also serve delicious smooties!</h2>
+        <section class="calltoaction">
+            <img src="images/smoothie_small_opt.png" alt="Smoothie Image">
+            <div class="actualcall">
+                <h2>Click the button below to make your own fruit drink!</h2>
+                <h2>Click Me</h2>
+            </div>
+        </section>
+        <section class="weather">
+            <div class="today">
+                <div>
+                    <h3 class="current_temp"></h3>
+                    <h3 class="current_condit"></h3>
+                    <h3 class="humidity"></h3>
+                </div>
+                <img src="" alt="Current Weather Icon" class="weather">
+            </div>
+            <div class="next_three_days">
+                <div class="1">
+                    <h3>Tomorrow</h3>
+                    <h4></h4>
 
-    </footer>
+                </div>
+                <div class="2">
+                    <h3>Next Day</h3>
+                    <h4></h4>
+
+                </div>
+                <div class="3">
+                    Following Day
+                    <h4></h4>
+                </div>
+            </div>
+        </section>
+        <section class="drinks_submitted">
+            <h2></h2>
+            <div>Drinks Submitted</div>
+        </section>
+        <section class="coastalarea">
+            <img src="images/lagunabeachimage1900x1400opt.jpg" alt="laguna beach image">
+            <h1>Visit Laguna Beach</h1>
+            <p>Laguna Beach is a coastal city located in Southern California. It is known for its beautiful beaches, art galleries, and outdoor activities such as hiking and surfing. The city has a population of around 23,000 people and covers an area of approximately 9 square miles. Laguna Beach is a popular tourist destination, particularly in the summer months, and attracts visitors from all over the world.</p>
+        </section>
+
+    </main>
+    <footer>©2023, Bountiful Foods</footer>
 </body>
 </html>
