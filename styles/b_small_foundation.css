@@ -35,7 +35,7 @@ nav.closed{
     width: 30px;
     align-self: center;
     margin-right: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 55px;
 }
 nav.closed:hover{
     transform: translateY(3px);
@@ -56,6 +56,27 @@ header img{
 .home > *{
     padding-inline: 4px;
 }
+.home h2,h3,p{
+    padding-inline: 16px;
+    line-height: 20px;
+}
 .home{
     text-align: center;
+}
+.home img{
+    margin-block: 15px;
+}
+.actualcall h2:first-child{
+    margin-bottom: 8px;
+}
+.actualcall h2:nth-of-type(2){
+    background-color: #dfe656;
+    display: inline;
+    padding-block: 4px;
+    margin: 10px;
+}
+.actualcall h2:nth-of-type(2):hover{
+    cursor: pointer;
+    background-color: black;
+    color: #dfe656;
 }
