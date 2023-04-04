@@ -17,18 +17,36 @@ html{
 header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+header h1{
+    font-size: 30px;
+}
+.evenspacing{
+    width: 30px;
+    margin-left: 8px;
 }
 nav.open{
     display: none;
 }
 nav.closed{
     order: 2;
+    width: 30px;
+    align-self: center;
+    margin-right: 8px;
+    margin-bottom: 30px;
 }
 nav.closed:hover{
     transform: translateY(3px);
     cursor: pointer;
 }
+.logontitle{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
 header img{
     width: 54px;
-    order: 1;
+    align-self: center;
+    margin-bottom: 12px;
 }

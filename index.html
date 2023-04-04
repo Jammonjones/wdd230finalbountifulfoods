@@ -11,7 +11,7 @@
     <meta name="description" content="Bountiful foods provides services with a central purpose of selling their fruit and fruit drinks to more of the local population and many visiting tourists. In addition to their physical location they have food trucks out and about in the area. As sales are either in person or over the phone the purpose of the website is to provide an easy way to find out more information about the store and provide an additional way for customers to find their phone numbers to make orders. In addition to this it will promote the store in a simple appealing way to encourage more people to try their fruit and drinks.     ">
 
     <!-- Connecting this html page to stylesheets in cascading order -->
-    <link rel="stylesheet" href="styles/a_my_default.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/b_small_foundation.css">
     <link rel="stylesheet" href="styles/c_medium.css">
     <link rel="stylesheet" href="styles/d_large.css">
@@ -28,6 +28,7 @@
 <!-- For SEO it is really important to use proper html semantics and use descriptive, relevant, high seach volume key words to all elements starting with h1 heading and down. Even img alt tags and p text helps out but h1, h2, and down in order of importance for SEO -->
 <body>
     <header>
+        <nav class="evenspacing"></nav>
         <nav class="closed"><img src="images/hamburgermenu50x50.png" alt="hamburger menu"></nav>
         <nav class="open">
             <div class="social_links">
@@ -38,8 +39,10 @@
             <a href="fresh.html">Fresh</a>
             <a href="aboutus.html">About Us</a>
         </nav>
-        <img src="images/logo150x150.png" alt="logo" class="logo">
-        <h1>Bountiful Foods</h1>
+        <nav class="logontitle">
+            <img src="images/logo150x150.png" alt="logo" class="logo">
+            <h1>Bountiful Foods</h1>
+        </nav>
     </header>
     <main>
         <img src="images/fruitheroimagelargeopt.jpg" alt="Image of Laguna Beach" class="hero">
