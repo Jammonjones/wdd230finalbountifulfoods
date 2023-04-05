@@ -48,7 +48,7 @@
     const lastUpdate = document.querySelector(".lastupdate");
     lastUpdate.textContent = document.lastModified;
 
-// Open nav when hamburger menu pressed
+// Open nav when hamburger menu pressed and close when x is clicked
     const navButton = document.querySelector(".closed");
     const openNav = document.querySelector(".open");
     const logoNTitle = document.querySelector(".logontitle");
@@ -56,10 +56,13 @@
         openNav.style.display = "block";
         navButton.style.display = "none";
         logoNTitle.style.display = "none";
-
     })
 
-// Close nav when x in nav is clicked
-
+    const xButton = document.querySelector(".x_symbol");
+    xButton.addEventListener("click", () =>{
+        openNav.style.display = "none";
+        navButton.style.display = "block";
+        logoNTitle.style.display = "flex"
+    })
 
 

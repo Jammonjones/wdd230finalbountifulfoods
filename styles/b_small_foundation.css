@@ -30,6 +30,31 @@ header h1{
 nav.open{
     display: none;
 }
+.social_links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin-top: 12px;
+}
+.social_links a img{
+    width: 40px;
+}
+.social_links a img.tiktok_wider{
+    width: 48px;
+}
+.x_symbol{
+    font-size: 55px;
+    font-weight: bolder;
+    color: #f9928e;
+    margin-bottom: 10px;
+    margin-left: 12px;
+}
+.x_symbol:hover{
+    cursor: pointer;
+    color: #dfe656;
+}
 nav.closed{
     order: 2;
     width: 30px;
