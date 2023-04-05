@@ -4,12 +4,16 @@
     async function PopulateCurrentWeather(){
         response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=33.5427&lon=117.7854&units=imperial&appid=ac915a6d1258935157073b6ba78cb9f4");
         data = await response.json();
-        console.log(data);
 
         const currentTemp = document.querySelector(".current_temp");
         currentTemp.textContent = data.main.temp;
-        const currentCondition = document.querySelector("current_condit");
-        currentCondition.textContent = data.
+        const currentCondition = document.querySelector(".current_condit");
+        currentCondition.textContent = data.weather[0].description;
+        const humidity = document.querySelector(".humidity");
+        humidity.textContent = data.main.humidity;
+        const weatherImg = document.querySelector("img.weather");
+        const iconCode = data.weather[0].icon;
+        weatherImg.setAttribute("src", `https://openweathermap.org/img/wn/${iconCode}@2x.png`);
     }
     PopulateCurrentWeather();
 
@@ -17,8 +21,24 @@
     async function PopulateFutureData(){
         apiResponse = await fetch("https://api.openweathermap.org/data/2.5/forecast?lat=33.5427&lon=117.7854&units=imperial&appid=ac915a6d1258935157073b6ba78cb9f4");
         apiData = await apiResponse.json();
-        console.log(apiData);
 
-        
+        const temps = [];
+        // Get temperature at noon for the next 3 days
+        apiData.list.forEach((item) =>{
+            const date = new Date(item.dt_txt);
+
+            if (date.getHours() === 12 && temps.length < 3 && date.getDate() >= new Date().getDate()){
+                temps.push(item.main.temp);
+            }
+        });
+
+        // Set the temperatures for the html elements for the next three days
+        const oneDay = document.querySelector(".one h4");
+        oneDay.textContent = temps[0];
+        const twoDay = document.querySelector(".two h4");
+        twoDay.textContent = temps[1];
+        const threeDay = document.querySelector(".three h4");
+        threeDay.textContent = temps[2];
+
     }
     PopulateFutureData();
