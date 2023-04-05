@@ -8,7 +8,8 @@
         const currentTemp = document.querySelector(".current_temp");
         currentTemp.textContent = data.main.temp;
         const currentCondition = document.querySelector(".current_condit");
-        currentCondition.textContent = data.weather[0].description;
+        let conditCapitalized = data.weather[0].description.split(" ").map((word) => word.slice(0, 1).toUpperCase() + word.slice(1)).join(" ");
+        currentCondition.textContent = conditCapitalized;
         const humidity = document.querySelector(".humidity");
         humidity.textContent = data.main.humidity;
         const weatherImg = document.querySelector("img.weather");
@@ -34,11 +35,31 @@
 
         // Set the temperatures for the html elements for the next three days
         const oneDay = document.querySelector(".one h4");
-        oneDay.textContent = temps[0];
+        oneDay.textContent = temps[0] + "°F";
         const twoDay = document.querySelector(".two h4");
-        twoDay.textContent = temps[1];
+        twoDay.textContent = temps[1] + "°F";
         const threeDay = document.querySelector(".three h4");
-        threeDay.textContent = temps[2];
+        threeDay.textContent = temps[2] + "°F";
 
     }
     PopulateFutureData();
+
+// Last Updated In Footer
+    const lastUpdate = document.querySelector(".lastupdate");
+    lastUpdate.textContent = document.lastModified;
+
+// Open nav when hamburger menu pressed
+    const navButton = document.querySelector(".closed");
+    const openNav = document.querySelector(".open");
+    const logoNTitle = document.querySelector(".logontitle");
+    navButton.addEventListener("click", () =>{
+        openNav.style.display = "block";
+        navButton.style.display = "none";
+        logoNTitle.style.display = "none";
+
+    })
+
+// Close nav when x in nav is clicked
+
+
+

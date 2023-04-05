@@ -56,6 +56,9 @@ header img{
 .home > *{
     padding-inline: 4px;
 }
+.home h2{
+    font-size: 18px;
+}
 .home h2,h3,p{
     padding-inline: 16px;
     line-height: 20px;
@@ -67,12 +70,12 @@ header img{
     margin-block: 15px;
 }
 .actualcall h2:first-child{
-    margin-bottom: 8px;
+    margin-bottom: 13px;
 }
 .actualcall h2:nth-of-type(2){
     background-color: #dfe656;
     display: inline;
-    padding-block: 4px;
+    padding: 9px;
     margin: 10px;
 }
 .actualcall h2:nth-of-type(2):hover{
@@ -90,4 +93,48 @@ header img{
     background-color: #f9928e;
     width: 50%;
     height: 100px;
+    display: flex;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.coastalarea h2{
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.coastalarea p{
+    margin-bottom: 13px;
+}
+.weatherbox{
+    border: black solid 3px;
+    margin-inline: 4px;
+    margin-bottom: 13px;
+}
+.today{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: black solid 3px;
+    justify-content: space-evenly;
+}
+.today img{
+    width: 100px;
+}
+.next_three_days{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.next_three_days > *{
+    border: black solid 3px;
+    padding: 2px;
+    margin: 2px;
+}
+footer{
+    height: 60px;
+    background-color: #f9928e;
+    text-align: center;
+    padding-top: 12px;
+    line-height: 20px;
 }
