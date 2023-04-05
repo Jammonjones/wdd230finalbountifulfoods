@@ -80,3 +80,14 @@ header img{
     background-color: black;
     color: #dfe656;
 }
+.drinks_submitted{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    align-items: center;
+}
+.drinks_submitted div{
+    background-color: #f9928e;
+    width: 50%;
+    height: 100px;
+}
