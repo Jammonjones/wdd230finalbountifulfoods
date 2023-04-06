@@ -69,4 +69,11 @@
         evenSpaceProblem.style.display = "block";
     })
 
+// Send user to fresh page when they click making drink button
+    const theButton = document.querySelector(".theButton");
+    theButton.addEventListener("click", () =>{
+        window.location.href = "fresh.html"
+    });
+
+
 

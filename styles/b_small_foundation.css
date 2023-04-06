@@ -57,7 +57,7 @@ nav.open{
     cursor: pointer;
     color: #dfe656;
 }
-.open > a:nth-last-child(-n+2){
+.open > a:nth-last-child(-n+3){
     display: block;
     color: black;
     font-size: 40px;
@@ -71,7 +71,7 @@ nav.open{
     padding-inline: 0;
 
 }
-.open > a:nth-last-child(-n+2):hover{
+.open > a:nth-last-child(-n+3):hover{
     padding-block: 10px;
 }
 nav.closed{
@@ -184,4 +184,14 @@ footer{
     text-align: center;
     padding-top: 12px;
     line-height: 20px;
+}
+/* -------------------- Fresh ----------- */
+label{
+    display: inline-block;
+}
+input{
+    display: inline-block;
+}
+.order_confirmation{
+    display: none;
 }

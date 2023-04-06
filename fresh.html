@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setting up device viewport and pixel scale etc -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For SEO it is really important to add descriptive, relevant, and high search volume phrases and words for your page title and description! -->
+    <title>Bountiful Foods</title>
+    <meta name="description" content="Bountiful foods provides services with a central purpose of selling their fruit and fruit drinks to more of the local population and many visiting tourists. In addition to their physical location they have food trucks out and about in the area. As sales are either in person or over the phone the purpose of the website is to provide an easy way to find out more information about the store and provide an additional way for customers to find their phone numbers to make orders. In addition to this it will promote the store in a simple appealing way to encourage more people to try their fruit and drinks.     ">
+
+    <!-- Connecting this html page to stylesheets in cascading order -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/b_small_foundation.css">
+    <link rel="stylesheet" href="styles/c_medium.css">
+    <link rel="stylesheet" href="styles/d_large.css">
+
+    <!-- Other style stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Connecting JS code to this html page and defering it's execution until after the elements of the page are build -->
+    <script defer src="scripts/fresh.js"></script>
+</head>
+
+<!-- For SEO it is really important to use proper html semantics and use descriptive, relevant, high seach volume key words to all elements starting with h1 heading and down. Even img alt tags and p text helps out but h1, h2, and down in order of importance for SEO -->
+<body>
+    <header>
+        <nav class="evenspacing"></nav>
+        <nav class="closed"><img src="images/hamburgermenu50x50.png" alt="hamburger menu"></nav>
+        <nav class="open">
+            <div class="social_links">
+                <div class="x_symbol">x</div>
+                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram images"></a>
+                <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="tiktok image" class="tiktok_wider"></a>
+                <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube image"></a>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="fresh.html">Fresh</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <nav class="logontitle">
+            <img src="images/logo150x150.png" alt="logo" class="logo">
+            <h1>Bountiful Foods</h1>
+        </nav>
+    </header>
+    <main class="fresh">
+        <h2>Order Your Own Freshly Made Smoothie Today!</h2>
+        <form>
+            <label>First Name:<input type="text" name="first_name" required></label>
+            <br><br>
+            <label>Email:<input type="email" name="email" required></label>
+            <br><br>
+            <label>Number:<input type="tel" name="number" required></label>
+            <br><br>
+            <section class="fruit_choices">
+                <h3 class="fruit_choice">Choose 3 types of fruit for your smoothie!</h3>
+            </section>
+            <br><br>
+            <label>Special Instruction:<textarea name="special_instructions" cols="30" rows="10"></textarea></label>
+            <br><br>
+            <input type="submit" name="submitted" value="Send Order">
+
+        </form>
+        <section class="order_confirmation">
+            <h3>Order Submission Details</h3>
+            <br>
+            <h4>Name: <span class="oName"></span></h4>
+            <h4>Email: <span class="oEmail"></span></h4>
+            <h4>Number: <span class="oPhone"></span></h4>
+            <h4>Drink Fruit Choices: <span class="oFruits"></span></h4>
+            <h4>Special Instructions: <span class="oSInstruct"></span></h4>
+            <h4>Nutritional Details: <span class="oNutritDetails"></span></h4>
+        </section>
+    </main>
+    <footer>
+        <h2>©2023 | Ammon Jones | KoalaT Tech</h2>
+        <h2 class="number">Call us now at 801-888-8888</h2>
+        <h2>Last Updated: <span class="lastupdate"></span></h2>
+    </footer>
+</body>
+</html>
