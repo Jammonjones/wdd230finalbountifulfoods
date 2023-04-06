@@ -186,6 +186,13 @@ footer{
     line-height: 20px;
 }
 /* -------------------- Fresh ----------- */
+.fresh{
+    display: block;
+    max-width: 350px;
+    border: #f9928e 3px solid;
+    margin: 8px auto;
+    padding: 5px;
+}
 label{
     display: inline-block;
 }
@@ -194,4 +201,21 @@ input{
 }
 .order_confirmation{
     display: none;
+}
+.fresh h2{
+    border-top: #f9928e 3px solid;
+    padding-top: 8px;
+}
+input[type="submit"]{
+    padding: 5px;
+    margin: 5px;
+    background-color: #f9928e;
+}
+/* About us */
+main.aboutus{
+    text-align: center;
+}
+main.aboutus h2{
+    border-bottom: #f9928e 3px solid;
+    margin: 5px;
 }
