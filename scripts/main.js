@@ -52,10 +52,13 @@
     const navButton = document.querySelector(".closed");
     const openNav = document.querySelector(".open");
     const logoNTitle = document.querySelector(".logontitle");
+    const evenSpaceProblem = document.querySelector(".evenspacing");
     navButton.addEventListener("click", () =>{
         openNav.style.display = "block";
         navButton.style.display = "none";
         logoNTitle.style.display = "none";
+        evenSpaceProblem.style.display = "none";
+
     })
 
     const xButton = document.querySelector(".x_symbol");
