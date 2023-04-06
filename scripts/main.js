@@ -65,7 +65,8 @@
     xButton.addEventListener("click", () =>{
         openNav.style.display = "none";
         navButton.style.display = "block";
-        logoNTitle.style.display = "flex"
+        logoNTitle.style.display = "flex";
+        evenSpaceProblem.style.display = "block";
     })
 
 
