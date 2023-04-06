@@ -10,5 +10,21 @@
 /* Styles needed to alter the small foundational styles so that the website adapts to fit a medium sized screen for things like tablets and Ipads */
 @media(min-width: 600px) and (max-width: 1000px){
     /* ---------------- Home Page Styles --------------- */
-
+    /* Main Section */
+    .calltoaction img{
+        margin: 15px auto;
+    }
+    .drinks_submitted{
+        max-width: 60vw;
+        margin-inline: auto;
+        flex-direction: column;
+    }
+    .drinks_submitted h2{
+        margin-bottom: 5px;
+        transform: scale(1.1);
+    }
+    .weatherbox{
+        max-width: 500px;
+        margin-inline: auto;
+    }
 }
